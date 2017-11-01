@@ -687,7 +687,7 @@ body.boxed-v #wrapper {
 }
 
 #header .holder {
-	padding: 47px 0 49px;
+	padding: 27px 0 29px;
 	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
 	background: #252021;
@@ -706,12 +706,12 @@ body.boxed-v #wrapper {
 	left: 0;
 	right: 0;
 	position: fixed;
-	padding: 20px 0;
+	padding: 10px 0;
 	background: #252021;
 }
 
 #header.sticky .holder .logo {
-	margin: 30px 0 -46px;
+	margin: 20px 0 -46px;
 }
 
 #header .nav-opener {
@@ -822,7 +822,7 @@ body.boxed-v #wrapper {
 .main-banner {
 	z-index: 1;
 	color: #fff;
-	padding: 120px 0;
+	padding: 80px 0;
 	overflow: hidden;
 	line-height: 24px;
 	position: relative;
@@ -968,10 +968,23 @@ body.boxed-v #wrapper {
     width:100%;
     float:left
 }
-    .steps-box:hover {
-        box-shadow: 0 0px 10px 1px #ebebeb;
-        border:1px solid #ebebeb;
+    
+    .steps-box:hover .border {
+    width: 70%;
     }
+    .steps-box .block {
+    color: #999999;
+    font-size: 14px;
+    line-height: 140%;
+    opacity: 0;
+    display: block;
+    padding-top: 10px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+    .steps-box:hover .block {
+    opacity: 1;
+}
 .steps-box .content {
     width:100%;
     float:left;
@@ -1024,11 +1037,7 @@ body.boxed-v #wrapper {
     margin: 0 auto;
     padding-top: 25px;
     }
-.steps-box:hover .icon-box {
-	
-	border: 1px solid #e8e8eb;
-	box-shadow: 0 0 0 7px #f7f7f7;
-}
+
 .steps-box .heading {
 	color: #222;
 	margin: 0 0 21px;
