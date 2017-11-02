@@ -711,7 +711,7 @@ body.boxed-v #wrapper {
 }
 
 #header.sticky .holder .logo {
-	margin: 10px 0 -46px;
+	margin: 0;
 }
 
 #header .nav-opener {
@@ -965,8 +965,6 @@ body.boxed-v #wrapper {
 .steps-box {
 	padding: 0;    
     line-height: 22px;
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
     position:relative;
     width:100%;
     float:left
@@ -1034,7 +1032,7 @@ body.boxed-v #wrapper {
     top: -20%;       
 }
     .steps-box:hover .icon-box {
-        background:#252021
+        background:#333
     }
     .steps-box .icon-box img {
             vertical-align: middle;
@@ -1127,6 +1125,12 @@ body.boxed-v #wrapper {
 	font-weight: 600;
 	line-height: 21px;
 	position: relative;
+}
+#footer hr {
+    margin-top: 23px;
+    margin-bottom: 23px;
+    border: 0;
+    border-top: 1px solid #999;
 }
 
 #footer p {
@@ -1347,3 +1351,6 @@ body.boxed-v #wrapper {
 }
 
 
+#header.sticky ul.nav-list.list-inline.text-center {
+    display: none;
+}
