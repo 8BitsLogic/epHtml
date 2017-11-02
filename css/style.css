@@ -687,7 +687,7 @@ body.boxed-v #wrapper {
 }
 
 #header .holder {
-	padding: 27px 0 29px;
+	padding: 10px 0 10px;
 	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
 	background: #252021;
@@ -711,7 +711,7 @@ body.boxed-v #wrapper {
 }
 
 #header.sticky .holder .logo {
-	margin: 20px 0 -46px;
+	margin: 10px 0 -46px;
 }
 
 #header .nav-opener {
@@ -733,7 +733,7 @@ body.boxed-v #wrapper {
 	color: #fff;
 	min-width: 60px;
 	overflow: hidden;
-	margin: -18px 0 -19px;
+	margin: -10px 0 -19px;
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transition: all ease .3s;
@@ -769,13 +769,16 @@ body.boxed-v #wrapper {
 #nav .nav-list li {
 	padding: 0 4.7%;
 	vertical-align: middle;
+    line-height:37px;
 }
 
 #nav .nav-list a {
-	color: #fff;
-    text-transform:uppercase;
-	-webkit-transition: all ease .3s;
-	transition: all ease .3s;
+	    color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    font-family: arial;
+    font-weight: normal;
 }#nav .nav-list a img{
 	    border-width: 3px;
     border-radius: 50%;
@@ -822,7 +825,7 @@ body.boxed-v #wrapper {
 .main-banner {
 	z-index: 1;
 	color: #fff;
-	padding: 80px 0;
+	padding: 80px 0  60px 0;
 	overflow: hidden;
 	line-height: 24px;
 	position: relative;
@@ -841,7 +844,7 @@ body.boxed-v #wrapper {
 .main-banner .heading {
 	color: #fff;
 	margin: 0 0 26px;
-	font: 700 80px/100px 'Montserrat', sans-serif;
+	font: 700 60px/80px 'Montserrat', sans-serif;
 }
 
 .main-banner .divider {
@@ -853,7 +856,7 @@ body.boxed-v #wrapper {
 
 .main-banner p {
 	margin: 0 0 36px;
-    font-size:40px;
+    font-size:30px;
     text-transform:uppercase;
     font-weight:bold
 }
@@ -989,7 +992,7 @@ body.boxed-v #wrapper {
     width:100%;
     float:left;
     padding:0 5%;
-    margin-top:50px;
+    margin-top:40px;
 }
 .steps-box .grey-bg {
     width:100%;
@@ -1015,8 +1018,8 @@ body.boxed-v #wrapper {
 }
 
 .steps-box .icon-box {
-	    width: 100px;
-    height: 100px;
+	  width: 80px;
+    height: 80px;
     font-size: 36px;
     border-radius: 50%;
     line-height: 100px;
@@ -1024,18 +1027,21 @@ body.boxed-v #wrapper {
     margin: 7px auto 30px;
     border: 1px solid #e8e8eb;
     box-shadow: none;
-    position:absolute;
-    margin:0 auto;
-    left:0;
-    right:0;
-    top:-20%;
-       
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -20%;       
 }
+    .steps-box:hover .icon-box {
+        background:#252021
+    }
     .steps-box .icon-box img {
             vertical-align: middle;
     text-align: center;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 15px;
+    width:50%;
     }
 
 .steps-box .heading {
@@ -1312,3 +1318,32 @@ body.boxed-v #wrapper {
     .stylish-input-group .fa.fa-search {
         color:#ef4136
     }
+
+
+@media (max-width: 767px) {
+    .main-banner {
+        padding: 120px 0 80px 0;
+
+    }
+        .main-banner p {
+            font-size: 28px;
+        }
+}
+@media (max-width: 480px) {
+    .main-banner .heading {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .main-banner {
+    padding: 180px 0 80px 0;
+}
+    .main-banner p {
+    font-size: 20px;
+}
+    .stylish-input-group {
+   
+    width: 90%;
+}
+}
+
+
