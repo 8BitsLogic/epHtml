@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Page Title -->
-    <title>Metro App - Application HTML5 Template</title>
+    <title>Byob</title>
     <!-- include the site stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7cRaleway:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- include the site stylesheet -->
     <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css" />
 
     <style class="color_css">
         /* don't delete this blank tag*/
@@ -46,24 +46,24 @@
                     <div class="row">
                         <div class="col-xs-12 text-center">
                             <!-- mobile logo -->
-                            <div class="logo main-bg-color text-uppercase pull-left visible-xs"><a href="#"><img src="images/logo.png" alt="img" class="img-responsive"></a></div>
+                            <div class="logo main-bg-color text-uppercase pull-left visible-xs"><a href="byob.html"><img src="images/logo.png" alt="img" class="img-responsive"></a></div>
                             <a href="#" class="nav-opener pull-right visible-xs"><i class="fa fa-bars" aria-hidden="true"></i></a>
                             <!-- page navigation start here -->
                             <nav id="nav">
                                 <ul class="nav-list list-inline text-center">
-                                    <li><a href="#" class="smooth">trainings</a></li>
+                                    <li><a href="training.html" class="smooth">trainings</a></li>
                                     <li><a href="#" class="smooth">products</a></li>
                                     <li><a href="#" class="smooth">community</a></li>
-                                    <li><a href="#" class="smooth">tests</a></li>
+                                    <li><a href="tests.html" class="smooth">tests</a></li>
                                 </ul>
                                 <ul class="nav-list list-inline text-center">
                                     <li><a href="#" class="smooth">messages</a></li>
-                                    <li><a href="#" class="smooth">wallet</a></li>
-                                    <li><a href="#" class="smooth">profile</a></li>
+                                    <li><a href="e-wallet.html" class="smooth">wallet</a></li>
+                                    <li><a href="profile.html" class="smooth">profile</a></li>
                                     <li><a href="#" class="smooth"><img src="images/img04.jpg" alt="img" class="img-responsive main-border-color img" style="display:inline">&nbsp;<span style="display:inline;color:#ef4136">$25.00</span></a></li>
                                 </ul>
                                 <!-- desktop logo -->
-                                <div class="logo hidden-xs"><a href="#"><img src="images/logo.png" alt="img" class="img-responsive"></a></div>
+                                <div class="logo hidden-xs"><a href="byob.html"><img src="images/logo.png" alt="img" class="img-responsive"></a></div>
                             </nav>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h1 class="heading text-uppercase">Introducing<br /> <span class="main-color">byob</span> pro.</h1>
+                            <h1 class="heading text-uppercase">PROFILE<br /></h1>
                             <span class="divider main-bg-color"></span>
                             <p>learn, Earn , Grow</p>
                             <div id="imaginary_container">
@@ -100,11 +100,10 @@
             </div><!-- end of main-banner -->
             
             <section class="pad-top-md pad-bottom-md" id="process-step">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                 <div class="container">
                     <div class="row">
                          <div class="col-xs-12">
-                             <div class="process">
+                             <div class="process pad-bottom-xs">
                                  <div class="process-row nav nav-tabs">
                                      <div class="process-step">
                                          <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-edit fa-3x"></i></button>
@@ -114,7 +113,6 @@
                                          <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-external-link fa-3x"></i></button>
                                          <p><small>Update<br />Password</small></p>
                                      </div>
-                                    
                                  </div>
                              </div>
                              <div class="tab-content">
@@ -233,11 +231,31 @@
                                      </ul>
                                  </div>
                                  <div id="menu2" class="tab-pane fade">
-                                     <h3>Menu 2</h3>
-                                     <p>Some content in menu 2.</p>
-                                     <ul class="list-unstyled list-inline pull-right">
-                                         <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
-                                         <li><button type="button" class="btn btn-info next-step">Submite <i class="fa fa-chevron-right"></i></button></li>
+                                     <div class="row">
+                                         <form>
+                                             <div class="col-sm-12">
+                                                 
+                                                 <div class="row">
+                                                     <div class="col-sm-4 form-group">
+                                                         <label>Old Password</label>
+                                                         <input type="text" placeholder="Old Password Here.." class="form-control">
+                                                     </div>
+                                                     <div class="col-sm-4 form-group">
+                                                         <label>New Password</label>
+                                                         <input type="text" placeholder="New Password Here.." class="form-control">
+                                                     </div>
+                                                     <div class="col-sm-4 form-group">
+                                                         <label>Confirm Password</label>
+                                                         <input type="text" placeholder="Confirm Password Here.." class="form-control">
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </form>
+                                     </div>
+                                     <ul class="list-unstyled list-inline text-center pad-top-xs">
+                                         <li><button type="button" class="btn btn-info next-step">Cancel</button></li>
+
+                                         <li><button type="button" class="btn btn-info next-step">Submit</button></li>
                                      </ul>
                                  </div>                                 
                              </div>
@@ -249,10 +267,6 @@
                 
             </section>
          
-            
-            
-
-
         </main>
         <!-- main content wrapping section end here -->
         <!-- footer of the page start here -->
@@ -308,9 +322,8 @@
 
 
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/plugins.js" defer></script>
-    <script src="js/jquery.main.js" defer></script>
     <script src="js/jquery.main.js" defer></script>
 
     <script type="text/javascript">
@@ -342,7 +355,7 @@
 
     </script>
     <!-- Include Date Range Picker -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 
     <script>
 	$(document).ready(function(){
