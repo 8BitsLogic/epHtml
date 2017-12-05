@@ -1352,11 +1352,21 @@ body {
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
-    text-align:center
+    text-align:center;
+    position:relative
 
 }
-    .thumbnail .caption { padding:0 15px;
-    }
+.thumbnail .overlay{
+        width: 242px;
+    margin-left: 20px;
+    height: 204px;
+    color: red;
+    font-size: 24px;
+    padding-top: 30%;
+    font-weight: bold;
+}
+.thumbnail .caption { padding:0 15px;
+}
 .center-block {
     display: block;
     margin-right: auto;
@@ -1399,3 +1409,58 @@ h4.badge {
     list-style-type:none;
     
 }
+
+
+#carousel-example-generic {
+    margin: 20px auto;
+    width: 100%;
+}
+
+#carousel-custom {
+    margin: 20px auto;
+    width: 400px;
+}
+#carousel-custom .carousel-indicators {
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    overflow:hidden;
+}
+
+       #carousel-custom  .carousel-inner > .item {
+           position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
+        }
+       #carousel-custom .carousel-inner>.active{
+    display: block;
+}
+#carousel-custom .carousel-indicators li {
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 !important;
+    width: auto;
+}
+#carousel-custom .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 1;
+}
+#carousel-custom .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+#carousel-custom .carousel-outer {
+    position: relative;
+}
+.carousel-indicators li img {
+  height: 66px;
+  width: 52px;}
